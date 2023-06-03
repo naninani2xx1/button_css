@@ -13,10 +13,21 @@ html {
 #main {
     display: flex;
     height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: self-start;
+    padding:  24px 0px;
+}
+
+.buttons {
+    position: fixed;
+    bottom: 24px;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-end;
-    padding:  24px 0px;
+    align-items: center;
+    width: 100%;
+    z-index: 99999;
 }
 
 .btn {
@@ -52,7 +63,7 @@ html {
     position: fixed;
     top: 32px;
     right: 32px;
-    z-index: 99999;
+    z-index: 1;
 }
 
 .toast--success {
